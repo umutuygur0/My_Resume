@@ -23,7 +23,7 @@ body {
 
 /* common styles */
 img {
-    width: 100%;
+    width: 110%;
 }
 
 a {
@@ -173,17 +173,78 @@ a {
 
 /* Expertise */
 .skills_list {
+    
     margin-top: 1rem;
     margin-left: 2rem;
     line-height: 2;
 }
+.skills {
+    margin-top: 0px;
+}
 
-/* Ref  */
-.ref_item {
+.skill-item {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    width: 200px;
+    font-size:small;
+    
+}
+
+.skill-bar {
+    flex: 1;
+    background-color: #444;
+    height: 20px;
+    border-radius: 12px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: width 0.3s ease;
+}
+
+.bar.java {
+    background-color: #00aaff;
+}
+
+.bar.python {
+    background-color: #ff6f00;
+}
+
+.bar.htmlCss {
+    background-color: #ff4081;
+}
+
+.bar.database {
+    background-color: #4caf50;
+}
+
+.bar.teamCollab {
+    background-color: #3f51b5;
+}
+
+.bar.fastLearner {
+    background-color: #e91e63;
+}
+
+.bar.leadership {
+    background-color: #9c27b0;
+}
+
+/* socco  */
+.socco_item {
     margin-top: 2rem;
 }
 
-.ref_name {
+.socco_name {
     font-size: 1.6rem;
     font-weight: 700;
 }
